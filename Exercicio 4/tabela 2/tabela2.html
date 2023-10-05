@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Aoboshi One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <title>Exercicio 4</title>
+
+    <style>
+        h2 {
+            font-family: 'Aoboshi One';
+        }
+
+        table {
+            font-family: 'Annie Use Your Telescope';
+            font-size: 20px;
+        }
+
+        th {
+            text-align: left;
+            background-color: #a794f8;
+        }
+
+        tr:hover {
+            background-color: #ffffff !important;
+            color: #000000;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f0ff;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #dcd7fc;
+        }
+    </style>
+</head>
+
+<body>
+    <script> function myfunction(){
+        document.getElementById("clique").textContent='Oops, você me achou!';
+        } </script>
+
+
+
+
+
+
+    <h2>Tabela 2</h2>
+
+    <table border="1" cellpadding="6px">
+        <tr>
+            <th>Nome</th>
+            <th>Comidas preferidas</th>
+            <th>Hobbies</th>
+        </tr>
+        <tr>
+            <td rowspan="3" id="clique" onclick="myfunction()">Hello Kitty</td>
+            <td>Batata frita</td>
+            <td> Jogar </td>
+        </tr>
+        <tr>
+            <td> Morango </td>
+            <td> Cantar </td>
+        </tr>
+        <tr>
+            <td> Brigadeiro </td>
+            <td> Desenhar </td>
+                
+        </tr>
+        
+        <tr>
+            <td rowspan="3" id="clique2" onclick="myfunction()">Pompompurin</td>
+            <td> Arroz Piamontese </td>
+            <td> Atuar </td>
+        </tr>
+        <tr>
+            <td> Lámen </td>
+             <td> Astrologia </td>
+                </tr>
+         <tr>
+            <td> Batata Rústica </td>
+             <td> Crochê </td>
+                          </tr>
+        
+        <tr>
+            <td rowspan="3" id="clique3" onclick="myfunction()">Keroppi</td>
+            <td> Kinder Bueno </td>
+            <td> Tocar Guitarra </td>
+        </tr>
+        <tr>
+            <td> Frango </td>
+            <td> Desenhar </td>
+                
+        </tr>
+        <tr>
+            <td> Bites de Morango</td>
+            <td> Pixar </td>
+                
+        </tr>
+        
+
+
+    </table>
+
+</body>
+
+</html>
