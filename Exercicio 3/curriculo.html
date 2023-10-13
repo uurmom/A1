@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Curriculo</title>
+    <title>Currículo</title>
     <style>
-        html, body {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0c879;
+            text-align: center;
+        }
+        .card {
+            background-color: #ecd898;
+            border: 1px solid #cccccc00;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(53, 47, 11, 0.699);
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            color: #411212;
+        }
+        .card h1 {
+            font-size: 24px;
+        }
+        .card p {
             font-size: 16px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .cartao{
-            width: 60rem;
-            height: 33rem;
-            padding: 1rem;
-            margin: 1rem auto;
-            border-radius: .7rem;
-            background-color:   #fcd15b88;
-            border: .1rem #eee4b7 solid;
-            box-shadow: 2px 2px 10px 5px rgba(83, 35, 6, 0.363);
-        }
-
-        .titulo{
-            margin: 0 2rem 1rem 0;
-            margin-top: 0px;
-            font-size: 30px;
-            color: #4e2707;
-
-        }
-        .dados{
-            background-color: aliceblue;
-            list-style: circle;
-        }
-
-        .corpo{
-            text-align:justify;
-            margin: 0 0rem 1.5rem 0;
-        }
-
-        .imagem{
-            width: 12rem;
-            height: 12rem;
-            margin: 0 5rem 1rem 3rem;
-            border-radius:10rem;
-            border-style: dashed;
-        }
-        footer{
-            display: flex;
-            justify-content: space-between;
-        }
-        button{
-            background-color: #4e2707;
-            color: #ffffff;
-            padding: .3rem 2rem;
-            ;
-        }
-
-
     </style>
 </head>
 <body>
-    <div class="cartao">
-        <h1 class="titulo">"Purin" Pompompurin  </h1>
-        <div class="corpo">
-            <img src="pruin 2.jpg" alt="eu com soninho" class="imagem">
-            <div class="dados"> 
-                <ul>
-                    <li>age</li>
-                    <li>name</li>
-                </ul>
-            </div>
-            <p>This fun golden retriever and his unmistakable brown beret. Hes a fun architect that loves to hang out with his friends!</p>
-        </div>  
-        <footer class="rodape">
-        <button> OK!</button>
-    </footer>
+    <div class="card">
+        <h1>PomPomPurin</h1>
+        <img src="9eaf3fa1a30e509a8c4d5e768981ea9c.png" alt="">
+        <p>E-mail: pompom@gmail.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </div>
+
+
+    <div class="card">
+        <h1>Educação</h1>
+        <p>Escola da Hello Kitty - Ensino Superior. </p>
+        <p>Graduado em Arquitetura.</p>
+    </div>
+
+    <div class="card">
+        <h1>Experiência Profissional</h1>
+        <p>Pizzas Keroppi</p>
+        <p>Criação de pizzas, administração da caixa registradora</p>
+        <p>Início 19/09/23 - Fim 20/10/23</p>
+    </div>
+
+    <div class="card">
+        <h1>Habilidades</h1>
+        <ul>
+            <li>Cozinheiro</li>
+            <li>Arquitetura</li>
+            <li>Sabe empilhar pratos na cabeça</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h1>Interesses</h1>
+        <ul>
+            <li>Cozinhar</li>
+            <li>Morder sapatos</li>
+            <li>Desenhar</li>
+        </ul>
+        
+
+    </div>
+    <a href="index.html">Home</a>
+        
 </body>
 </html>
