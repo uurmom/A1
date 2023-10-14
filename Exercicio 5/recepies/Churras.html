@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Pastel</title>
+    <link rel="shortcut icon" type="image" href="/public/iconic.png" />
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        html,
+        body {
+            display: flex;
+            font-size: 16px;
+            background-color: #fff0de;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .cartao {
+            width: 70rem;
+            height: 36.5rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            border-radius: .7rem;
+            background-color: #8f3f20;
+            border: .1rem #8f3f20 solid;
+            box-shadow: 2px 2px 10px 5px rgba(83, 35, 6, 0.363);
+        }
+
+        .titulo {
+            margin-left: 2rem;
+            margin-top: 0.7rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #fff;
+            font-family: var(--playfair-display)
+        
+        }
+
+        .dados {
+            background-color: aliceblue;
+            list-style: circle;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .corpo {
+            text-align: justify;
+            margin: 0rem 0rem 1.5rem 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .coluna1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Ingredientes ul {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 0.5rem 2rem 2rem 2.5rem;
+
+
+        }
+
+        .Ingredientes {
+            background-color: #fff0de;
+            border-radius: .7rem;
+            margin-top: 1.3rem;
+            margin-left: 0.8rem;
+            width: 16.3rem;
+            height: 12rem;
+
+
+        }
+
+        .Ingredientes h1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: .2rem;
+            margin-bottom: 0.2rem;
+            margin-left: 1.6rem;
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            font-size: 16px;
+
+
+        }
+
+        .Ingredientes ul {
+            text-align: left;
+
+        }
+
+        .Massa {
+            background-color: #fff0de;
+            border-radius: .7rem;
+            margin-left: 0rem;
+            width: 19.4rem;
+            height: 28.3rem;
+
+        }
+
+        .Massa h2 {
+            display: flex;
+            justify-content: center;
+            margin: .9rem;
+            text-align: center;
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            font-size: 20px;
+            text-transform: uppercase;
+
+        }
+
+        .Massa ol {
+            margin-left: 2.3rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0.8rem;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .Massa li{
+            margin-bottom: .8rem;
+        }
+
+        .Resto{
+            background-color: #fff0de;
+            border-radius: .7rem;
+            margin-left: 1rem;
+            width: 28rem;
+            height: 28.3rem;
+
+        }
+
+        .Resto h1{
+            display: flex;
+            justify-content: center;
+            margin: .9rem;
+            text-align: center;
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            font-size: 24px;
+            text-transform: uppercase;
+
+        }
+
+        .Resto ol{
+            margin-left: 2rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0.8rem;
+            text-align: left;
+            font-size: 18px;
+
+        }
+        .Resto li{
+            margin-bottom: .8rem;
+
+        }
+
+        .imagem {
+            width: 16.5rem;
+            height: 15rem;
+            margin: 0 1.3rem 0rem .7rem;
+            border-radius: .8rem;
+            border-style: dashed;
+            border-color: #fff;
+            background-color: #4e1e07;
+            display: flex;
+            align-items: center;
+        }
+
+        .coluna1 img{
+            width: 15rem;
+            height: 14rem;
+            padding: 0.3rem;
+           
+        }
+
+
+
+        a {
+            border-radius: 15%;
+            color: #ffffff;
+            background-color: #4e2707;
+            padding: 0.5rem;
+            height: fit-content;
+            width: fit-content;
+            margin-right: 1rem;
+            margin-top: 1rem;
+
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cartao">
+        <div class="header">
+            <u class="titulo"> Churrascão </u>
+            <a class="rodape" href="/public/index.html"> Voltar</a>
+        </div>
+        <div class="corpo">
+            <div class="coluna1">
+                <div class="imagem"> <img src="/images/churras.png" alt="eu com soninho"> </div>
+                <div class="Ingredientes">
+                    <ul>
+                        <h1>INGREDIENTES</h1>
+                        <li>1,5 kg de carne para churrasco (picanha, alcatra, fraldinha, costela, etc.)</li>
+                        <li>Sal grosso a gosto</li>
+                        <li>Pimenta-do-reino a gosto</li>
+                        <li>Chimichurri ou molho de sua escolha para servir</li>
+                        <li>Carvão para grelhar</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="Massa">
+                    <h2>Preparação</h2>
+                    <ol>
+                        <li>Antes de grelhar, retire a carne da geladeira e deixe-a atingir a temperatura ambiente. Isso ajuda a cozinhar a carne de maneira mais uniforme.</li>
+                        <li>Acenda o carvão: Prepare sua churrasqueira a carvão, acendendo o carvão e deixando-o queimar até formar uma brasa quente.</li>
+                        <li>Tempere a carne: Tempere a carne com sal grosso e pimenta-do-reino. Não economize no sal, pois ele ajudará a criar uma crosta saborosa na carne. Deixe a carne descansar por cerca de 15-30 minutos para absorver os temperos.</li>
+                    </ol>
+                </div>
+                <div class="Resto">
+                    <ol>
+                        <h1>PASSO A PASSO</h1>
+                        <li>Coloque a carne na grelha quente, com a gordura virada para cima (no caso da picanha, por exemplo). Grelhe a carne de acordo com o seu gosto, virando-a ocasionalmente para garantir que cozinhe uniformemente..</li>
+                        <li>Coloque uma porção do recheio no centro de cada disco de massa.</li>
+                        <li>Descanse a carne: Após grelhar, retire a carne da churrasqueira e deixe-a descansar por alguns minutos. Isso ajuda a manter os sucos internos e a carne ficará mais suculenta.</li>
+                        <li>Corte e sirva: Corte a carne em fatias finas, seguindo a direção da fibra da carne. Sirva o churrasco quente com chimichurri ou outro molho de sua escolha.</li>
+                        A chave para um bom churrasco é a paciência!
+                    </ol>
+                </div>
+
+            </div>
+
+        </div>
+</body>
+
+</html>

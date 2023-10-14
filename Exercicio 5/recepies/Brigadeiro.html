@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Pastel</title>
+    <link rel="shortcut icon" type="image" href="/public/iconic.png" />
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        html,
+        body {
+            display: flex;
+            font-size: 16px;
+            background-color: #fff0de;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .cartao {
+            width: 70rem;
+            height: 36.5rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            border-radius: .7rem;
+            background-color: #8f3f20;
+            border: .1rem #8f3f20 solid;
+            box-shadow: 2px 2px 10px 5px rgba(83, 35, 6, 0.363);
+        }
+
+        .titulo {
+            margin-left: 2rem;
+            margin-top: 0.7rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #fff;
+            font-family: var(--playfair-display)
+        
+        }
+
+        .dados {
+            background-color: aliceblue;
+            list-style: circle;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .corpo {
+            text-align: justify;
+            margin: 0rem 0rem 1.5rem 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .coluna1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Ingredientes ul {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 0.5rem 2rem 2rem 2.5rem;
+
+
+        }
+
+        .Ingredientes {
+            background-color: #fff0de;
+            border-radius: .7rem;
+            margin-top: 1.3rem;
+            margin-left: 0.8rem;
+            width: 16.3rem;
+            height: 12rem;
+
+
+        }
+
+        .Ingredientes h1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: .2rem;
+            margin-bottom: 0.2rem;
+            margin-left: 1.6rem;
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            font-size: 16px;
+
+
+        }
+
+        .Ingredientes ul {
+            text-align: left;
+
+        }
+
+        .Massa {
+            background-color: #fff0de;
+            border-radius: .7rem;
+            margin-left: 0rem;
+            width: 19.4rem;
+            height: 28.3rem;
+
+        }
+
+        .Massa h2 {
+            display: flex;
+            justify-content: center;
+            margin: .9rem;
+            text-align: center;
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            font-size: 20px;
+            text-transform: uppercase;
+
+        }
+
+        .Massa ol {
+            margin-left: 2.3rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0.8rem;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .Massa li{
+            margin-bottom: .8rem;
+        }
+
+        .Resto{
+            background-color: #fff0de;
+            border-radius: .7rem;
+            margin-left: 1rem;
+            width: 28rem;
+            height: 28.3rem;
+
+        }
+
+        .Resto h1{
+            display: flex;
+            justify-content: center;
+            margin: .9rem;
+            text-align: center;
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            font-size: 24px;
+            text-transform: uppercase;
+
+        }
+
+        .Resto ol{
+            margin-left: 2rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0.8rem;
+            text-align: left;
+            font-size: 18px;
+
+        }
+        .Resto li{
+            margin-bottom: .8rem;
+
+        }
+
+        .imagem {
+            width: 16.5rem;
+            height: 15rem;
+            margin: 0 1.3rem 0rem .7rem;
+            border-radius: .8rem;
+            border-style: dashed;
+            border-color: #fff;
+            background-color: #4e1e07;
+            display: flex;
+            justify-content: center;
+        }
+
+        .coluna1 img{
+            width: 15em;
+            height: 13rem;
+            padding: 0.3rem;
+        }
+
+
+
+        a {
+            border-radius: 15%;
+            color: #ffffff;
+            background-color: #4e2707;
+            padding: 0.5rem;
+            height: fit-content;
+            width: fit-content;
+            margin-right: 1rem;
+            margin-top: 1rem;
+
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cartao">
+        <div class="header">
+            <u class="titulo"> Brigadeiro de Caramelo</u>
+            <a class="rodape" href="/public/index.html"> Voltar</a>
+        </div>
+        <div class="corpo">
+            <div class="coluna1">
+                <div class="imagem"> <img src="/images/brigadeiro.png" alt="eu com soninho"> </div>
+                <div class="Ingredientes">
+                    <ul>
+                        <h1>INGREDIENTES</h1>
+                        <li>2 latas de leite condensado</li>
+                        <li>1/4 de xícara de chocolate amargo picado</li>
+                        <li>2 col. de sopa de manteiga</li>
+                        <li>Sal </li>
+                        <li>1 xícara de açúcar</li>
+                        <li>1/4 de xícara de água</li>
+                        <li>1/2 xícara de creme de leite</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="Massa">
+                    <h2>Caramelo Salgado</h2>
+                    <ol>
+                        <li>Em uma panela, misture o açúcar e a água. Leve ao fogo médio, sem mexer, até obter um caramelo.</li>
+                        <li>Retire a panela do fogo e adicione o creme de leite quente, mexendo bem até que a mistura fique homogênea</li>
+                        <li>Cubra a massa com um pano úmido e deixe descansar por cerca de 30 minutos.</li>
+                        <li>Volte a panela ao fogo e adicione o sal marinho. Cozinhe por mais 2-3 minutos, mexendo constantemente, até o caramelo engrossar ligeiramente. Reserve</li>
+                    </ol>
+                </div>
+                <div class="Resto">
+                    <ol>
+                        <h1>Brigadeiros</h1>
+                        <li>Em uma panela, coloque o leite condensado, o cacau em pó, o chocolate amargo picado, a manteiga e uma pitada de sal.</li>
+                        <li>Cozinhe em fogo baixo, mexendo constantemente, até a mistura engrossar e começar a se soltar do fundo da panela.</li>
+                        <li>Após deixar tudo esfriar, enrole pequenas porções do brigadeiro em bolas e coloque-as em uma assadeira e refriegere</li>
+                        <li>Após o resfriamento, mergulhe cada brigadeiro no caramelo salgado, cobrindo-os uniformemente.</li>
+                        <li>Deixe o caramelo endurecer e, em seguida, sirva os Brigadeiros de Caramelo Salgado.</li>
+                        
+                    </ol>
+                </div>
+
+            </div>
+
+        </div>
+</body>
+
+</html>
