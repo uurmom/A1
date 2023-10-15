@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Site de Currículo</title>
+</head>
+
+<body>
+    <!-- Página de Login -->
+    <div id="login" style="display: block;">
+        <h1>Login</h1>
+        <form action="resume.html" method="post">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+        <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <!-- Página de Cadastro -->
+    <div id="cadastro" style="display: none;">
+        <h1>Cadastro</h1>
+        <form action="resume.html" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="birthdate">Data de Nascimento:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="confirmPassword">Confirme a Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+        <p>Já possui uma conta? <a href="login.html">Login</a></p>
+    </div>
+
+    <!-- Página de Currículo -->
+    <div id="resume" style="display: none;">
+        <h1>Currículo</h1>
+        <img src="avatar.jpg" alt="Foto">
+        <p><strong>Nome:</strong> John Doe</p>
+        <p><strong>Data de Nascimento:</strong> 01/01/1980</p>
+        <p><strong>Profissão:</strong> Desenvolvedor Web</p>
+        <p><strong>Escolaridade:</strong> Bacharelado em Ciência da Computação</p>
+        <h2>Experiências Profissionais:</h2>
+        <ol>
+            <li>Desenvolvedor Web na Empresa ABC (2010 - 2015)</li>
+            <li>Analista de Sistemas na Empresa XYZ (2005 - 2010)</li>
+        </ol>
+        <p><a href="login.html">Sair</a></p>
+    </div>
+
+    <script>
+        // JavaScript para alternar entre as páginas
+        function showPage(pageId) {
+            const pages = ["login", "cadastro", "resume"];
+            pages.forEach(function (page) {
+                document.getElementById(page).style.display = "none";
+            });
+            document.getElementById(pageId).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
