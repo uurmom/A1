@@ -1,1 +1,0 @@
-<button class="receitas__card" onclick="location.href='http://google.com';">Google</button>
