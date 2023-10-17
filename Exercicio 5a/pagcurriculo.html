@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculos Express</title>
+    <link rel="shortcut icon" type="image"
+        href="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\images\logo 2.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            display: flex;
+            font-size: 16px;
+            background-color: #fff0de;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .cartao {
+            width: 40rem;
+            height: 36.5rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            border-radius: .7rem;
+            background-color: #7b5a31;
+
+            box-shadow: 2px 2px 10px 5px rgba(83, 35, 6, 0.363);
+        }
+
+        .titulo {
+            margin-left: 2rem;
+            margin-top: 0.7rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+
+        }
+
+        .dados {
+            background-color: aliceblue;
+            list-style: circle;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+        .corpo {
+            text-align: justify;
+            margin: 0rem 0rem 1.5rem 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .coluna1 {
+            display: flex;
+            flex-direction: column;
+           
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Ingredientes h1{
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .Ingredientes ul {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          margin-left: -2rem;
+
+
+        }
+
+        .Ingredientes {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff0de;
+            border-radius: 0rem;
+            margin-top: 0rem;
+            margin-left: 0.8rem;
+            width: 11.2rem;
+            height: 17.1rem;
+
+
+        }
+
+        .Ingredientes h1 {
+           
+            text-align: center;
+            margin-top: .2rem;
+            margin-bottom: 0.7rem;
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            font-size: 16px;
+
+
+        }
+
+        .Ingredientes ul {
+            text-align: left;
+            list-style: none;
+
+        }
+
+        .Massa {
+            background-color: #fff0de;
+            border-radius: 0rem;
+            margin-left: 0rem;
+            width: 28rem;
+            height: 28.3rem;
+
+        }
+
+        .Massa h2 {
+            display: flex;
+            justify-content: center;
+            margin-left: .9rem;
+            margin-right: .9rem;
+            margin-top: .9rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 500;
+            font-family: var(--plus-jakarta-sans);
+            font-size: 20px;
+            text-transform: uppercase;
+
+
+        }
+
+        .Massa ul {
+            margin-left: 0rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0.8rem;
+            text-align: left;
+            font-size: 18px;
+            list-style: none;
+        }
+
+        .Massa li {
+            margin-bottom: .8rem;
+        }
+
+        .Massa ol{
+            margin-left: 3.5rem;
+        }
+
+
+
+        .imagem {
+            width: 10.8rem;
+            height: 10.8rem;
+            margin-left: .8rem;
+            padding: .2rem;
+
+            border-color: #fff;
+            background-color: #fff0de;
+        }
+
+        .coluna1 img {
+            width: 10rem;
+            height: 10rem;
+            border-style: inherit;
+            border-color: black;
+        }
+        
+        .Voltar {
+            display: flex;
+            flex-direction: ;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+        }   
+    </style>
+</head>
+
+<body>
+
+    <div class="cartao">
+        <div class="header">
+            <h1 class="titulo"> Exemplo de Currículo </h1>
+
+        </div>
+        <div class="corpo">
+            <div class="coluna1">
+                <div class="imagem"> <img
+                        src="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\images\jefferson.jpg"
+                        alt="eu com soninho"> </div>
+                <div class="Ingredientes">
+                    <ul>
+                        <h1>INFORMAÇÕES</h1>
+                        <li><b>Nome:</b><br>Jefferson Olivera Freitas<br></li>
+                        <p></p>
+                        <li><b>Data de Nascimento:</b><br>13/06/1982</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="Massa">
+                <h2>Informaçoes Pessoais</h2>
+                <ul>
+                    <li><b>Profissão:</b>Atendente</li>
+                    <li><b>Escolaridade:</b></li>
+                    <ul>
+                        <li>- escola tal</li>
+                        <li>- univerdade tal</li>
+                        <li>- tecnico tal</li>
+                    </ul>
+                    <li><b>Empregos</b></li>
+                </ul>
+                <ol>
+                    <li>Supermercados BH</li>
+                    <li>Tim telefonica</li>
+                    <li>Leitura</li>
+                </ol>
+            </div>
+            <a class="Voltar" href="C:\Users\HP\Documents\UNA\design-interface\Exercicio 5a\login.html">
+                <b>Cancelar</b></a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
