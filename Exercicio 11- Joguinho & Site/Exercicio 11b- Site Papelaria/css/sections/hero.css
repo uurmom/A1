@@ -1,0 +1,83 @@
+.hero {
+    display: flex;
+    min-height: 30rem;
+    overflow: hidden;
+
+}
+
+.hero-image {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+
+}
+
+.hero-image img {
+    width: 80%;
+    height: 80%;
+    margin-top: 0rem;
+    margin-left: 19rem;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.hero-image__overlay {
+    position: absolute;
+    width: 43rem;
+    height: 33.5rem;
+    background-color: var(primary-color);
+    animation-name: exemplo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex: 1;
+}
+
+.hero-content-info {
+    display: flex;
+    flex: 2;
+    padding-left: 3.6rem;
+    padding-top: 10rem;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.hero-content-info h1 {
+    font-size: 80px;
+    font-weight: 600px;
+    font-family: var(--playfair-display);
+    line-height: 5rem;
+}
+
+.hero-content-info p {
+    margin: 20px 0 0 20px;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 18px;
+}
+
+@keyframes exemplo {
+    0% {
+        background-color: var(--primary-color);
+
+    }
+
+
+    50% {
+        background-color: rgb(22, 76, 255);
+
+    }
+
+
+    100% {
+        background-color: var(--primary-color);
+
+    }
+}
