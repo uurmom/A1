@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html,
+
+        body{
+            font-size: 14px ;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        main {
+width:50rem;
+margin: 5rem;
+        }
+
+        #resposta {
+            background-color: brown;
+            padding: 1rem;
+            margin-top: 1rem;
+            width: 40rem;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Preço dos produtos</h1>
+        <div id="resposta"></div>
+        <script type="text/javascript">
+var compra = parseInt(prompt("Informe o valor da compra"))
+var pago = parseInt(prompt("Informe o valor pago"))
+var troco, qtd50, qtd20, qtd10, qtd5, qtd2;
+
+resposta.innerHTML = "";
+
+
+if (compra > pago) {
+    resposta.innerHTML= "O valor pago é insuficiente para a compra";
+}
+
+else{
+    troco = pago - compra;
+
+    qtd50 = parseInt (troco/ 50);
+    troco = troco % 50;
+
+    qtd20 = parseInt (troco/ 20);
+    troco = troco % 20;
+
+    qtd10 = parseInt (troco/ 10);
+    troco = troco % 10;
+
+    qtd5 = parseInt (troco/ 5);
+    troco = troco % 5;
+
+    qtd2 = parseInt (troco/ 2);
+    troco = troco % 2
+
+    qtd2 = parseInt (troco/ 1);
+    troco = troco % 1
+
+
+}
+
+resposta.innerHTML += "Quantidade de notas de R$ 50,00: " + qtd50;
+resposta.innerHTML += "Quantidade de notas de R$ 20,00: " + qtd20;
+resposta.innerHTML += "Quantidade de notas de R$ 10,00: " + qtd10;
+resposta.innerHTML += "Quantidade de notas de R$ 5,00: " + qtd5;
+resposta.innerHTML += "Quantidade de notas de R$ 2,00: " + qtd2;
+resposta.innerHTML += "Quantidade de notas de R$ 1,00: " + qtd1;
+
+
+
+        </script>
+    </main>
+</body>
+</html>

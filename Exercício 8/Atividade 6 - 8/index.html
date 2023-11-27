@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Formulário da Papelaria</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container mt-3">
+<h3>Papelaria Van Gogh</h3>
+<p>Bem-vindo à nossa papelaria, onde você pode encontrar uma variedade de produtos de papelaria de alta qualidade.</p>
+<form action="processar_formulario.php" class="was-validated">
+<div class="mb-3 mt-3">
+<label for="nome" class="form-label">Nome Completo:</label>
+<input type="text" class="form-control" id="nome" placeholder="Informe seu nome completo" name="nome_usuario" required>
+<div class="valid-feedback">Nome informado corretamente.</div>
+<div class="invalid-feedback">Por favor, preencha o campo 'nome'.</div>
+</div>
+<div class="mb-3">
+<label for="senha" class="form-label">Senha de Acesso</label>
+<input type="password" class="form-control" id="senha" placeholder="Informe sua senha de acesso" name="senha_usuario" required>
+<div class="valid-feedback">Senha informada corretamente.</div>
+<div class="invalid-feedback">Por favor, preencha o campo 'senha'.</div>
+</div>
+<div class="form-check mb-3">
+<input class="form-check-input" type="checkbox" id="confirmacao" name="confirmacao_usuario" required>
+<label class="form-check-label" for="confirmacao">Aceito os Termos e Condições.</label>
+<div class="valid-feedback">Confirmação preenchida.</div>
+<div class="invalid-feedback">É necessário confirmar a aceitação dos termos.</div>
+</div>
+<button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+</div>
+</body>
+</html>

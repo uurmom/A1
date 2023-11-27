@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="teste.css">
+    <title>Calculadora</title>
+    <style>
+    
+        input[type="text"] {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+ 
+    <h1>Calculadora</h1>
+    <input type="text" id="display" readonly>
+    <br>
+    <button onclick="addToDisplay('7')">7</button>
+    <button onclick="addToDisplay('8')">8</button>
+    <button onclick="addToDisplay('9')">9</button>
+    <button onclick="addOperator('+')">+</button>
+    <br>
+    <button onclick="addToDisplay('4')">4</button>
+    <button onclick="addToDisplay('5')">5</button>
+    <button onclick="addToDisplay('6')">6</button>
+    <button onclick="addOperator('-')">-</button>
+    <br>
+    <button onclick="addToDisplay('1')">1</button>
+    <button onclick="addToDisplay('2')">2</button>
+    <button onclick="addToDisplay('3')">3</button>
+    <button onclick="addOperator('*')">*</button>
+    <br>
+    <button onclick="addToDisplay('0')">0</button>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="calculateResult()">=</button>
+    <button onclick="addOperator('/')">/</button>
+
+    <script id="script">
+        let display = document.getElementById('display');
+        let currentInput = '';
+        let currentOperator = '';
+        let previousInput = '';
+
+        function addToDisplay(value) {
+            currentInput += value;
+            display.value = currentInput;
+        }
+
+        function clearDisplay() {
+            currentInput = '';
+            currentOperator = '';
+            previousInput = '';
+            display.value = '';
+        }
+
+        function addOperator(operator) {
+            if (currentInput !== '') {
+                currentOperator = operator;
+                previousInput = currentInput;
+                currentInput = '';
+                display.value = '';
+            }
+        }
+
+        function calculateResult() {
+            if (currentInput !== '' && previousInput !== '' && currentOperator !== '') {
+                currentInput = parseFloat(currentInput);
+                previousInput = parseFloat(previousInput);
+
+                switch (currentOperator) {
+                    case '+':
+                        currentInput = previousInput + currentInput;
+                        break;
+                    case '-':
+                        currentInput = previousInput - currentInput;
+                        break;
+                    case '*':
+                        currentInput = previousInput * currentInput;
+                        break;
+                    case '/':
+                        if (currentInput !== 0) {
+                            currentInput = previousInput / currentInput;
+                        } else {
+                            alert("Erro: divisão por zero");
+                            clearDisplay();
+                            return;
+                        }
+                        break;
+                }
+
+                display.value = currentInput;
+                currentOperator = '';
+                previousInput = '';
+            }
+        }
+    </script>
+</body>
+
+</html>
