@@ -5,98 +5,164 @@
     <link rel="stylesheet" href="teste.css">
     <title>Calculadora</title>
     <style>
-    
-        input[type="text"] {
-            width: 200px;
+      
+
+        .container {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 25px;
+            width: 20rem;
+            height: 30rem;
+            margin-left: 28rem;
+            margin-bottom: 4.8rem;
+            margin-top: 5rem;
+            background-color: rgb(185, 185, 185);
+            align-items: center;
+            justify-content: center;
+            box-shadow:  5px 10px;
+        }
+
+
+        .numeros {
+            margin-left: 0.7rem;
+        }
+
+        .btn {
+            height: 70px;
+            width: 70px;
+            margin: 0.1rem;
+            border-radius: 1rem;
+        }
+
+        .resultado {
+            margin-left: 0.8rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+           
+
+        }
+
+        .textinho {
+            height: 7rem;
+            width: 16rem;
+            border-radius: 0.6rem;
+            padding-left: 2rem;
+            font-size: 64px;    
+
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right, rgb(210, 250, 255), rgb(255, 255, 191))
         }
     </style>
 </head>
 
 <body>
+    
 
- 
-    <h1>Calculadora</h1>
-    <input type="text" id="display" readonly>
-    <br>
-    <button onclick="addToDisplay('7')">7</button>
-    <button onclick="addToDisplay('8')">8</button>
-    <button onclick="addToDisplay('9')">9</button>
-    <button onclick="addOperator('+')">+</button>
-    <br>
-    <button onclick="addToDisplay('4')">4</button>
-    <button onclick="addToDisplay('5')">5</button>
-    <button onclick="addToDisplay('6')">6</button>
-    <button onclick="addOperator('-')">-</button>
-    <br>
-    <button onclick="addToDisplay('1')">1</button>
-    <button onclick="addToDisplay('2')">2</button>
-    <button onclick="addToDisplay('3')">3</button>
-    <button onclick="addOperator('*')">*</button>
-    <br>
-    <button onclick="addToDisplay('0')">0</button>
-    <button onclick="clearDisplay()">C</button>
-    <button onclick="calculateResult()">=</button>
-    <button onclick="addOperator('/')">/</button>
+        <div class="container">
 
-    <script id="script">
-        let display = document.getElementById('display');
-        let currentInput = '';
-        let currentOperator = '';
-        let previousInput = '';
 
-        function addToDisplay(value) {
-            currentInput += value;
-            display.value = currentInput;
-        }
+            <div class="numero">
+                <div class="resultado">
+                    <input type="text" class="textinho" id="display" readonly>
+                    <br>
+                </div>
 
-        function clearDisplay() {
-            currentInput = '';
-            currentOperator = '';
-            previousInput = '';
-            display.value = '';
-        }
+                <div class="numeros">
+                    <button class="btn" onclick="addToDisplay('7')">7</button>
+                    <button class="btn" onclick="addToDisplay('8')">8</button>
+                    <button class="btn" onclick="addToDisplay('9')">9</button>
+                    <button class="btn" onclick="addOperator('+')">+</button>
+                    <br>
+                    <button class="btn" onclick="addToDisplay('4')">4</button>
+                    <button class="btn" onclick="addToDisplay('5')">5</button>
+                    <button class="btn" onclick="addToDisplay('6')">6</button>
+                    <button class="btn" onclick="addOperator('-')">-</button>
+                    <br>
+                    <button class="btn" onclick="addToDisplay('1')">1</button>
+                    <button class="btn" onclick="addToDisplay('2')">2</button>
+                    <button class="btn" onclick="addToDisplay('3')">3</button>
+                    <button class="btn" onclick="addOperator('*')">*</button>
+                    <br>
+                    <button class="btn" onclick="addToDisplay('0')">0</button>
+                    <button class="btn" onclick="clearDisplay()">C</button>
+                    <button class="btn" onclick="calculateResult()">=</button>
+                    <button class="btn" onclick="addOperator('/')">/</button>
+                </div>
+            </div>
+       
 
-        function addOperator(operator) {
-            if (currentInput !== '') {
-                currentOperator = operator;
-                previousInput = currentInput;
-                currentInput = '';
-                display.value = '';
-            }
-        }
 
-        function calculateResult() {
-            if (currentInput !== '' && previousInput !== '' && currentOperator !== '') {
-                currentInput = parseFloat(currentInput);
-                previousInput = parseFloat(previousInput);
 
-                switch (currentOperator) {
-                    case '+':
-                        currentInput = previousInput + currentInput;
-                        break;
-                    case '-':
-                        currentInput = previousInput - currentInput;
-                        break;
-                    case '*':
-                        currentInput = previousInput * currentInput;
-                        break;
-                    case '/':
-                        if (currentInput !== 0) {
-                            currentInput = previousInput / currentInput;
-                        } else {
-                            alert("Erro: divisão por zero");
-                            clearDisplay();
-                            return;
-                        }
-                        break;
-                }
 
+
+
+
+
+
+
+        <script id="script">
+            let display = document.getElementById('display');
+            let currentInput = '';
+            let currentOperator = '';
+            let previousInput = '';
+
+            function addToDisplay(value) {
+                currentInput += value;
                 display.value = currentInput;
+            }
+
+            function clearDisplay() {
+                currentInput = '';
                 currentOperator = '';
                 previousInput = '';
+                display.value = '';
             }
-        }
-    </script>
+
+            function addOperator(operator) {
+                if (currentInput !== '') {
+                    currentOperator = operator;
+                    previousInput = currentInput;
+                    currentInput = '';
+                    display.value = '';
+                }
+            }
+
+            function calculateResult() {
+                if (currentInput !== '' && previousInput !== '' && currentOperator !== '') {
+                    currentInput = parseFloat(currentInput);
+                    previousInput = parseFloat(previousInput);
+
+                    switch (currentOperator) {
+                        case '+':
+                            currentInput = previousInput + currentInput;
+                            break;
+                        case '-':
+                            currentInput = previousInput - currentInput;
+                            break;
+                        case '*':
+                            currentInput = previousInput * currentInput;
+                            break;
+                        case '/':
+                            if (currentInput !== 0) {
+                                currentInput = previousInput / currentInput;
+                            } else {
+                                alert("Erro: divisão por zero");
+                                clearDisplay();
+                                return;
+                            }
+                            break;
+                    }
+
+                    display.value = currentInput;
+                    currentOperator = '';
+                    previousInput = '';
+                }
+            }
+        </script>
+    </div>
+
 </body>
 
 </html>
